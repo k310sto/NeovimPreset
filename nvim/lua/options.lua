@@ -42,3 +42,6 @@ vim.opt.hidden = true
 vim.opt.swapfile = false --スワップファイルを生成しない
 vim.opt.wrap = true --端までコードが届いた際に折り返す
 
+vim.opt.termguicolors = true
+vim.opt.winblend = 0 -- ウィンドウの不透明度
+vim.opt.pumblend = 0 -- ポップアップメニューの不透明度

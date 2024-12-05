@@ -24,9 +24,13 @@ vim.g.maplocalleader = "\\"
 -- Setup lazy.nvim
 require("lazy").setup("plugins")
 
--- 背景色を透過
-vim.cmd('colorscheme tokyonight')
-vim.cmd('highlight Normal guibg=NONE ctermbg=NONE')
-
-
 require("options")
+
+-- 背景色を透過
+vim.cmd([[colorscheme tokyonight]])
+--vim.cmd('highlight Normal guibg=NONE ctermbg=NONE')
+
+--lualineの起動
+require('lualine').setup()
+
+

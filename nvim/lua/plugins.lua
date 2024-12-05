@@ -28,16 +28,38 @@ return{
 
     },
 
+    --lualine
+    {
+        "nvim-lualine/lualine.nvim",
+        dependencies = { "nvim-tree/nvim-web-devicons", },
+        options = { theme = 'nightfly' },
+    },
+    
+    --git操作用
+    {
+        "tpope/vim-fugitive",
+        opt = {},
+    },
+
+
+
+
     --カラーテーマ
     {
         "folke/tokyonight.nvim",
         style = "day",
-        transparent = true,
+        transparent = false,
         styles = {
+            sidebars = "transparent",
+            floats = "transparent",
             comments = { italic = true },
             keywords = { italic = true },
     	},
     },
-    install = { colorscheme = { "habamax" } },
+    --install = { colorscheme = { "habamax" } },
     checker = { enabled = true },
+
+
+
+  --ここより上に書く 
   }
